@@ -1,0 +1,81 @@
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat (8,1fr);
+}
+
+#flower {
+   position: absolute;
+left: 1150px;
+top: 200px; 
+opacity: .6;
+}
+
+#flower:hover {opacity: 1}
+
+#leaf {
+position: absolute;
+left: 500px;
+top: 620px; 
+opacity: .6; 
+height:250px;
+width:250px;
+transform:rotate(90deg);
+    
+}
+
+#leaf:hover {opacity: 1}
+
+#blackbox {
+  position: absolute;
+  left: 850px;
+  top: 100px;;
+}
+
+#pinkbox {
+position: absolute;
+left: 950px;
+top: 350px;
+    
+}
+
+
+#photo {
+    height:600px;
+    width: 900px;
+    grid-row: 5;
+    grid-column: 1/7;
+}
+
+#name {
+    position: absolute;
+  left: 100px;
+  top: 550px;;
+}
+
+.zoom {
+  
+  transition: transform .2s; /* Animation */
+  
+  margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: left;
+font-family: "Montserrat", sans-serif;
+}
